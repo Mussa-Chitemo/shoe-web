@@ -132,7 +132,7 @@ main {
 
 
 /* for small screen  */
-/* @media screen  and (max-width: 768px){
+ @media screen  and (max-width: 768px){
      .container {
           flex-flow: column-reverse wrap;
      }
@@ -164,7 +164,7 @@ main {
           right: 100px;
      }
 
-} */
+} 
 /* for 425px screen large phone  */
 @media screen and (max-width: 425px) {
      .container {
