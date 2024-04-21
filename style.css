@@ -1,0 +1,237 @@
+*{
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+     color: white;
+}
+body{
+     background: rgba(0, 0, 0, 1);
+}
+header{
+     padding: 0px 80px;
+}
+header .nav-bar .logo {
+     height: 40px;
+     width: 40px;
+     overflow: hidden;
+     background: white;
+     border-radius: 50%;
+}
+header .nav-bar .logo img {
+     height: 40px;
+}
+.nav-bar{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px;
+}
+.nav-links{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.nav-links li {
+     list-style: none;
+}
+.nav-links li a {
+     text-decoration: none;
+     text-transform: capitalize;
+     display: block;
+     padding: 4px 8px;
+     transition: 0.5s ease;
+     text-align: center;
+     position: relative;
+}
+.nav-links li a:hover::after{
+     content: "";
+     display: block;
+     height: 2px;
+     background: white;
+     width: 100%;
+}
+.humbager {
+     display: none;
+     cursor: pointer;
+     background: white;
+}
+.humbager .bars {
+     display: block;
+     margin: 6px;
+     background: black;
+     height: 2px;
+     width: 25px;
+     transition: 0.5s ease;
+}
+.nav-bar .sign {
+     background: white;
+     color: rgba(0, 0, 0, 1);
+     padding: 6px 14px;
+     font-size: 1.25rem;
+     font-weight: 600;
+     border: none;
+     border-radius: 50px;
+     cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+.container{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background: rgba(217, 217, 217, 0.1);
+     border: 1px solid rgba(117, 117, 117, 1);
+     padding: 10px;
+     border-radius: 30px;
+}
+main {
+     padding: 0px 80px;
+}
+.container .container-two img{
+     width: 100%;
+}
+.container .container-one h1 {
+     font-size: 4rem;
+     margin: 10px auto;
+}
+.container .container-one p{
+     color: rgba(255, 255, 255, 1);
+     font-size: 1.2rem;
+     margin: 10px auto;
+}
+.container .container-one .buy-now {
+     background: white;
+     color: rgba(0, 0, 0, 1);
+     padding: 6px 14px;
+     font-size: 1.25rem;
+     font-weight: 600;
+     border: 1px solid white;
+     border-radius: 50px;
+     cursor: pointer;
+}
+.container .container-one .explore {
+     padding: 6px 14px;
+     font-size: 1.25rem;
+     font-weight: 600;
+     background: none;
+     border: 1px solid white;
+     border-radius: 50px;
+     cursor: pointer;
+}
+
+
+
+
+/* for small screen  */
+/* @media screen  and (max-width: 768px){
+     .container {
+          flex-flow: column-reverse wrap;
+     }
+     .nav-bar .sign {
+          display: none;
+     }
+     .humbager {
+          display: block;
+     }
+     .humbager.active .bars:nth-child(2){
+          opacity: 0;
+     }
+     .humbager.active .bars:nth-child(1){
+          transform: translateY(8px) rotate(45deg);
+     }
+     .humbager.active .bars:nth-child(3){
+          transform: translateY(-8px) rotate(-45deg);
+     }
+     .nav-links {
+          flex-direction: column;
+          position: fixed;
+          z-index: 1;
+          top: 50px;
+          right: -100px;
+          background: rgb(32, 32, 32);
+          height: 200px;
+     }
+     .active {
+          right: 100px;
+     }
+
+} */
+/* for 425px screen large phone  */
+@media screen and (max-width: 425px) {
+     .container {
+          flex-flow: column-reverse wrap;
+          border-radius: 20px;
+     }
+     .nav-bar .sign {
+          display: none;
+     }
+     .humbager {
+          display: block;
+     }
+     .humbager.active .bars:nth-child(2){
+          opacity: 0;
+     }
+     .humbager.active .bars:nth-child(1){
+          transform: translateY(8px) rotate(45deg);
+     }
+     .humbager.active .bars:nth-child(3){
+          transform: translateY(-8px) rotate(-45deg);
+     }
+     .nav-links {
+          flex-direction: column;
+          position: fixed;
+          z-index: 1;
+          top: 50px;
+          right: -100px;
+          background: rgb(32, 32, 32);
+          height: 200px;
+     }
+     .active {
+          right: 16px;
+     }
+     .container .container-one h1{
+          font-size: 2.5rem;
+     }
+     .container .container-one p {
+          font-size: 0.9rem;
+     }
+     .button-container {
+          display: flex;
+          justify-content: space-between;
+     }
+     header{
+          padding: 0px 8px;
+     }
+     main {
+          padding: 0px 12px;
+     }
+}
+
+
+/* for 768px  */
+@media screen and (max-width: 768px) {
+     header {
+          padding: 0px 20px;
+     }
+     main {
+          padding: 0px 20px;
+     }
+     .container {
+          flex-flow: column-reverse wrap;
+     }
+     .button-container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+     }
+}
+
